@@ -9,8 +9,8 @@ class SplashScreenImpl : SplashScreen {
 
         var color = Console.ForegroundColor;
         Write(0xcc00, false, "           ▄█▄ ▄▄█ ▄ ▄ ▄▄▄ ▄▄ ▄█▄  ▄▄▄ ▄█  ▄▄ ▄▄▄ ▄▄█ ▄▄▄\n           █▄█ █ █ █ █ █▄█ █ █ █   █ █ █▄ ");
-            Write(0xcc00, false, " █  █ █ █ █ █▄█\n           █ █ █▄█ ▀▄▀ █▄▄ █ █ █▄  █▄█ █   █▄ █▄█ █▄█ █▄▄  sub y{2021}\n            \n");
-            Write(0xcc00, false, "           ");
+            Write(0xcc00, false, " █  █ █ █ █ █▄█\n           █ █ █▄█ ▀▄▀ █▄▄ █ █ █▄  █▄█ █   █▄ █▄█ █▄█ █▄▄  {'year': 2021}\n          ");
+            Write(0xcc00, false, "  \n           ");
             Write(0x666666, false, "                      ~   ~  ");
             Write(0xc8ff, false, "~");
             Write(0x666666, false, " ~");
@@ -26,7 +26,7 @@ class SplashScreenImpl : SplashScreen {
             Write(0x666666, false, "~  ");
             Write(0xcccccc, false, " 1 ");
             Write(0xffff66, false, "**\n           ");
-            Write(0x333333, false, "                                      ~    ..''''  ");
+            Write(0x333333, false, "                                      .    ..''''  ");
             Write(0x666666, false, " 2\n                                                               3\n                                ");
             Write(0x666666, false, "                               4\n                                                               5\n  ");
             Write(0x666666, false, "                                                             6\n                                     ");
