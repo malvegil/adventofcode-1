@@ -30,7 +30,34 @@ class Solution : Solver {
     }
 
     public object PartTwo(string input) {
-        return 0;
+        var oxgen = Diagnostics(input);
+        var cdiox = Diagnostics(input);
+
+        var i = 0;
+        var sum = 0;
+        while (oxgen.Count() > 1)
+        {
+            sum = oxgen.Select(s => s[i]).Sum();
+            oxgen = oxgen.Where(x => x[i] == (sum >= oxgen.Count() / 2 ? 1 : 0)).ToList();
+            i++;
+        }
+        i = 0;
+        while (cdiox.Count() > 1)
+        {
+            sum = cdiox.Select(s => s[i]).Sum();
+            cdiox = cdiox.Where(x => x[i] != (sum >= cdiox.Count() / 2 ? 1 : 0)).ToList();
+            i++;
+        }
+
+        var o = new StringBuilder();
+        var c = new StringBuilder();
+        for (var j = 0; j < oxgen[0].Length; j++)
+        {
+            o.Append(oxgen[0][j]);
+            c.Append(cdiox[0][j]);
+        }
+
+        return Convert.ToInt32(o.ToString(), 2) * Convert.ToInt32(c.ToString(), 2);
     }
 
     List<int[]> Diagnostics(string input) => (from n in input.Split('\n') select Array.ConvertAll(n.ToCharArray(), c => (int)Char.GetNumericValue(c))).ToList();
