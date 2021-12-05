@@ -9,8 +9,8 @@ class SplashScreenImpl : SplashScreen {
 
         var color = Console.ForegroundColor;
         Write(0xcc00, false, "           ▄█▄ ▄▄█ ▄ ▄ ▄▄▄ ▄▄ ▄█▄  ▄▄▄ ▄█  ▄▄ ▄▄▄ ▄▄█ ▄▄▄\n           █▄█ █ █ █ █ █▄█ █ █ █   █ █ █▄ ");
-            Write(0xcc00, false, " █  █ █ █ █ █▄█\n           █ █ █▄█ ▀▄▀ █▄▄ █ █ █▄  █▄█ █   █▄ █▄█ █▄█ █▄▄  {'year': 2021}\n          ");
-            Write(0xcc00, false, "  \n           ");
+            Write(0xcc00, false, " █  █ █ █ █ █▄█\n           █ █ █▄█ ▀▄▀ █▄▄ █ █ █▄  █▄█ █   █▄ █▄█ █▄█ █▄▄  λy.2021\n            \n    ");
+            Write(0xcc00, false, "       ");
             Write(0x666666, false, "           ~  ~ ~~ ");
             Write(0xc8ff, false, "~");
             Write(0x666666, false, "~~");
@@ -23,20 +23,21 @@ class SplashScreenImpl : SplashScreen {
             Write(0xc8ff, false, "~~~~~~~~~~~~~~~~~~~~  ");
             Write(0xcccccc, false, " 1 ");
             Write(0xffff66, false, "**\n           ");
-            Write(0x666666, false, "                        .   .    . ");
-            Write(0xb5ed, false, "  .     ");
+            Write(0x666666, false, "                    . .          . ");
+            Write(0xb5ed, false, "     '  ");
             Write(0xa47a4d, false, "..''''  ");
             Write(0xcccccc, false, " 2 ");
             Write(0xffff66, false, "**\n           ");
-            Write(0x666666, false, "                                .         ");
+            Write(0x666666, false, "                                .   ");
+            Write(0xa2db, false, " . '' ");
             Write(0xa47a4d, false, ":        ");
             Write(0xcccccc, false, " 3 ");
             Write(0xffff66, false, "**\n           ");
-            Write(0x666666, false, "                        ..   .  .' .  ....'        ");
+            Write(0x666666, false, "                            .   .'    ....'        ");
             Write(0xcccccc, false, " 4 ");
             Write(0xffff66, false, "*");
             Write(0x666666, false, "*\n           ");
-            Write(0x333333, false, "                         ..   ..|\\..''             ");
+            Write(0x333333, false, "                              ..|\\..''             ");
             Write(0x666666, false, " 5\n                                                               6\n                                ");
             Write(0x666666, false, "                               7\n                                                               8\n  ");
             Write(0x666666, false, "                                                             9\n                                     ");
